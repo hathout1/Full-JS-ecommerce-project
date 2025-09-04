@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-container">
+        <form id="loginForm" novalidate>
+          <h2>Login</h2>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email" />
+            <small class="error" id="emailError"></small>
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" placeholder="Password" />
+            <small class="error" id="passwordError"></small>
+          </div>
+          <button type="submit" class="btn">Login</button>
+
+          <p class="links">
+            <a href="#">Forgot Password?</a>
+          </p>
+
+          <button
+            type="button"
+            class="btn secondary"
+            onclick="location.href='register.html'"
+          >
+            Create an Account
+          </button>
+        </form>
+        <p id="errorMsg"></p>
+      </div>
+
+      <div class="info-container">
+        <img src="images/logo.png" alt="Store Logo" class="logo" />
+        <h1>Welcome To EL-BA4MOHANDES STORE</h1>
+        <p>You will find anything you want in this store.</p>
+        <p>Have A Nice Shopping.</p>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

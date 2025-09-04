@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" class="logo-img" />
+        <span class="store-name">EL-BA4MOHANDES STORE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="products">All</a></li>
+        <li><a href="#" data-page="contact">Contact</a></li>
+        <li><a href="#" data-page="cart">🛒</a></li>
+        <li><a href="login.html" id="logout" data-page="logout">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact-section">
+      <h1>Get in Touch</h1>
+      <p>
+        We’d love to hear from you! Fill in the form below and we’ll get back to
+        you soon.
+      </p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <small class="error" id="name-error"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Your email" />
+          <small class="error" id="email-error"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message"></textarea>
+          <small class="error" id="message-error"></small>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p id="popup-message"></p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <iframe
+          src="https://maps.google.com/maps?q=Menoufia,Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="300"
+          height="200"
+        ></iframe>
+      </div>
+      <div class="footer-right">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>📞 +20 123 456 789</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <span class="store-name">EL-BA4MOHANDES STORE</span>
+        <ul class="footer-links">
+          <li><a href="#" data-page="home">Home</a></li>
+          <li><a href="#" data-page="products">All</a></li>
+          <li><a href="#" data-page="contact">Contact</a></li>
+          <li><a href="#" data-page="cart">🛒</a></li>
+        </ul>
+      </div>
+      <button id="toTop">⬆</button>
+    </footer>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

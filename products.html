@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" class="logo-img" />
+        <span class="store-name">EL-BA4MOHANDES STORE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="products">All</a></li>
+        <li><a href="#" data-page="contact">Contact</a></li>
+        <li><a href="#" data-page="cart">🛒</a></li>
+        <li><a href="login.html" id="logout" data-page="logout">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section class="products-section">
+      <div class="sidebar">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="clothes">Clothes</button>
+        <button class="filter-btn" data-category="makeup">Makeup</button>
+        <button class="filter-btn" data-category="phones">Phones</button>
+        <div class="filters">
+          <div>
+            <label>Price Range</label>
+            <input type="number" id="min-price" placeholder="Min Price" />
+            <input type="number" id="max-price" placeholder="Max Price" />
+          </div>
+
+          <div>
+            <label>Size : </label>
+            <select id="size-filter">
+              <option value="">All</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+
+          <button id="apply-filters">Apply Filters</button>
+        </div>
+      </div>
+      <div class="products-container" id="products-container"></div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <iframe
+          src="https://maps.google.com/maps?q=Menoufia,Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="300"
+          height="200"
+        ></iframe>
+      </div>
+      <div class="footer-right">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>📞 +20 123 456 789</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <span class="store-name">EL-BA4MOHANDES STORE</span>
+        <ul class="footer-links">
+          <li><a href="#" data-page="home">Home</a></li>
+          <li><a href="#" data-page="products">All</a></li>
+          <li><a href="#" data-page="contact">Contact</a></li>
+          <li><a href="#" data-page="cart">🛒</a></li>
+        </ul>
+      </div>
+      <button id="toTop">⬆</button>
+    </footer>
+
+    <div id="productModal" class="product-modal">
+      <div class="product-modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modalImg" src="" alt="Product" />
+        <h2 id="modalName"></h2>
+        <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+        <p><strong>Price:</strong> <span id="modalPrice"></span> EGP</p>
+        <p><strong>Available:</strong> <span id="modalStock"></span> pcs</p>
+        <button id="modalAddToCart">Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>
